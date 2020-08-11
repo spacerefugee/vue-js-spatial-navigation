@@ -22,6 +22,10 @@ import vueSpatialNavigation from "vue-spatial-navigation";
 Vue.use(vueSpatialNavigation);
 ```
 
+## Example
+
+[![Edit condescending-dawn-krksp](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/condescending-dawn-krksp?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Documentation
 
 ### `<SpatialNavigation>`
