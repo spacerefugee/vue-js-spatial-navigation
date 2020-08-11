@@ -10,16 +10,16 @@ react-js-spatial-navigation](https://github.com/dead/react-js-spatial-navigation
 ### NPM
 
 ```shell
-    npm install vue-spatial-navigation
+    npm install vue-js-spatial-navigation
 ```
 
 ## Getting Started
 
 ```javascript
 import Vue from "vue";
-import vueSpatialNavigation from "vue-spatial-navigation";
+import vjsn from "vue-js-spatial-navigation";
 
-Vue.use(vueSpatialNavigation);
+Vue.use(vjsn);
 ```
 
 ## Example
