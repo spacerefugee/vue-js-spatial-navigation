@@ -1,42 +1,28 @@
 {
   "name": "vue-spatial-navigation",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A wrapper of js-spatial-navigation to Vue components.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacerefugee/vue-spatial-navigation.git"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+  "keywords": [
+    "vue",
+    "spatial-navigation",
+    "smart-tv",
+    "key-navigation"
+  ],
+  "author": "Brandon.gh.yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spacerefugee/vue-spatial-navigation/issues"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "homepage": "https://github.com/spacerefugee/vue-spatial-navigation#readme"
 }
