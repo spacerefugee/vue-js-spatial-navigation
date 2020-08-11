@@ -1,6 +1,6 @@
 {
-  "name": "vue-spatial-navigation",
-  "version": "1.0.0",
+  "name": "vue-js-spatial-navigation",
+  "version": "1.0.1",
   "description": "A wrapper of js-spatial-navigation to Vue components.",
   "main": "index.js",
   "directories": {
@@ -22,7 +22,7 @@
   "author": "Brandon.gh.yang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spacerefugee/vue-spatial-navigation/issues"
+    "url": "https://github.com/spacerefugee/vue-js-spatial-navigation/issues"
   },
-  "homepage": "https://github.com/spacerefugee/vue-spatial-navigation#readme"
+  "homepage": "https://github.com/spacerefugee/vue-js-spatial-navigation#readme"
 }

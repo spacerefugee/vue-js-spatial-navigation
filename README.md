@@ -1,6 +1,6 @@
 # vue-spatial-navigation
 
-A wrapper of js-spatial-navigation to Vue components;
+A wrapper of [js-spatial-navigation](https://github.com/luke-chang/js-spatial-navigation) to Vue components;
 
 Inspiration by [
 react-js-spatial-navigation](https://github.com/dead/react-js-spatial-navigation)
@@ -13,12 +13,6 @@ react-js-spatial-navigation](https://github.com/dead/react-js-spatial-navigation
     npm install vue-spatial-navigation
 ```
 
-### Yarn
-
-```shell
-    yarn add vue-spatial-navigation
-```
-
 ## Getting Started
 
 ```javascript
@@ -27,10 +21,6 @@ import vueSpatialNavigation from "vue-spatial-navigation";
 
 Vue.use(vueSpatialNavigation);
 ```
-
-## Example
-
-[Live Exapmle]()
 
 ## Documentation
 
