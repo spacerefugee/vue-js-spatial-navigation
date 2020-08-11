@@ -1,4 +1,4 @@
-# vue-spatial-navigation
+# vue-js-spatial-navigation [![npm version](http://img.shields.io/npm/v/vue-js-spatial-navigation.svg?style=flat)](https://npmjs.org/package/vue-js-spatial-navigation "View this project on npm")
 
 A wrapper of [js-spatial-navigation](https://github.com/luke-chang/js-spatial-navigation) to Vue components;
 
