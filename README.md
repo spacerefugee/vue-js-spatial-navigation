@@ -1,9 +1,6 @@
 # vue-js-spatial-navigation [![npm version](http://img.shields.io/npm/v/vue-js-spatial-navigation.svg?style=flat)](https://npmjs.org/package/vue-js-spatial-navigation "View this project on npm")
 
-A wrapper of [js-spatial-navigation](https://github.com/luke-chang/js-spatial-navigation) to Vue components;
-
-Inspiration by [
-react-js-spatial-navigation](https://github.com/dead/react-js-spatial-navigation)
+Vue directive of [js-spatial-navigation](https://github.com/luke-chang/js-spatial-navigation);
 
 ## Installation
 
@@ -22,53 +19,57 @@ import vjsn from "vue-js-spatial-navigation";
 Vue.use(vjsn);
 ```
 
-## Example
+#### Optional global [Configuration](https://github.com/luke-chang/js-spatial-navigation#configuration)
 
-[![Edit condescending-dawn-krksp](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/condescending-dawn-krksp?fontsize=14&hidenavigation=1&theme=dark)
+```javascript
+const config = {
+  focusableClassName: "focusable",
+  straightOnly: false,
+  straightOverlapThreshold: 0.5,
+  rememberSource: false,
+  disabled: false,
+  defaultElement: "",
+  enterTo: "",
+  leaveFor: null,
+  restrict: "self-first",
+  tabIndexIgnoreList: "a, input, select, textarea, button, iframe, [contentEditable=true]",
+  navigableFilter: null
+};
+Vue.use(vjsn, config);
+```
 
 ## Documentation
 
-### `<SpatialNavigation>`
+### `v-focus`
 
-This component initialize the Spatial Navigation library.
-It should be used only one time and in the root node of the application.
-The spatial navigation will only work within the Focusable components.
+A directive that make the element focusable
 
-### `<Focusable>`
-
-A Focusable component that handle the onFocus, onUnfocus, onClickEnter events.
-
-```
-Events:
-   on-focus: (optional)
-     A function that will be fired when the component is focused.
-
-   on-unfocus: (optional)
-     A function that will be fired when the component is unfocused.
-
-   on-click-enter: (optional)
-     A function that will be fired when the component is focused and enter key is pressed.
+```html
+<div v-focus>
+  <div></div>
+</div>
 ```
 
-### `<FocusableSection>`
+### `v-focus-section`
 
-A Focusable Section can specify a behaviour before focusing an element.
-I.e. selecting a default element, the first element or an active one.
+A directive that define a focus Section;[Reference](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationaddsectionid-config)
 
+```html
+<div v-focus-section>
+  <div v-focus>
+    <div></div>
+  </div>
+  <div v-focus>
+    <div></div>
+  </div>
+</div>
 ```
-Props:
-   defaultElement: (default: '')
-     The default element that will be focused when entering this section.
-     This can be:
-       * a valid selector string for "querySelectorAll".
-       * a NodeList or an array containing DOM elements.
-       * a single DOM element.
-       * an empty string.
 
-   enterTo: (default: 'default-element')
-     If the focus comes from another section, you can define which element in this section should be focused first.
-     This can be:
-       * 'last-focused' indicates the last focused element before we left this section last time. If this section has never been focused yet, the default element (if any) will be chosen next.
-       * 'default-element' indicates the element defined in defaultElement.
-       * an empty string.
+#### Pass a specified section id or configuration
+
+```html
+<!-- section id -->
+<div v-focus-section:my-section></div>
+<!-- configuration -->
+<div v-focus-section:my-section="{enterTo:'last-focused'}"></div>
 ```
