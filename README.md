@@ -42,7 +42,9 @@ Vue.use(vjsn, config);
 
 ### `v-focus`
 
-A directive that make the element focusable
+A directive that make the element focusable.
+
+The element with `v-focus` must under the element with `v-focus-section`, see [v-focus-section](#`v-focus-section`)
 
 ```html
 <div v-focus>
