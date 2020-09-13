@@ -23,7 +23,6 @@ Vue.use(vjsn);
 
 ```javascript
 const config = {
-  focusableClassName: "focusable",
   straightOnly: false,
   straightOverlapThreshold: 0.5,
   rememberSource: false,
@@ -40,6 +39,15 @@ Vue.use(vjsn, config);
 
 ## Documentation
 
+### `$SpatialNavigation`
+
+A global Vue instance property for [SpatialNavigation](https://github.com/luke-chang/js-spatial-navigation#api-reference);
+
+```javascript
+// you can access SpatialNavigation in every instance
+this.$SpatialNavigation;
+```
+
 ### `v-focus`
 
 A directive that make the element focusable.
@@ -54,7 +62,7 @@ The element with `v-focus` must under the element with `v-focus-section`, see [v
 
 ### `v-focus-section`
 
-A directive that define a focus Section;[Reference](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationaddsectionid-config)
+A directive that define a focus [Section](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationaddsectionid-config)
 
 ```html
 <div v-focus-section>

@@ -1,6 +1,6 @@
 {
   "name": "vue-js-spatial-navigation",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Vue directive of js-spatial-navigation",
   "main": "index.js",
   "directories": {
