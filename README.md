@@ -52,7 +52,7 @@ this.$SpatialNavigation;
 
 A directive that make the element focusable.
 
-The element with `v-focus` must under the element with `v-focus-section`, see [v-focus-section](#`v-focus-section`)
+The element with `v-focus` must under the element with `v-focus-section`, see [v-focus-section](#v-focus-section)
 
 ```html
 <div v-focus>
