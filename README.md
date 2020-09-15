@@ -60,6 +60,29 @@ The element with `v-focus` must under the element with `v-focus-section`, see [v
 </div>
 ```
 
+#### dynamic control
+
+```html
+<div v-focus="focusable">
+  <div></div>
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        focusable: false
+      };
+    },
+    methods: {
+      changeFocusable() {
+        this.focusable = !this.focusable;
+      }
+    }
+  };
+</script>
+```
+
 ### `v-focus-section`
 
 A directive that define a focus [Section](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationaddsectionid-config)
@@ -75,11 +98,56 @@ A directive that define a focus [Section](https://github.com/luke-chang/js-spati
 </div>
 ```
 
-#### Pass a specified section id or configuration
+#### Pass a specified section id
 
 ```html
 <!-- section id -->
-<div v-focus-section:my-section></div>
-<!-- configuration -->
-<div v-focus-section:my-section="{enterTo:'last-focused'}"></div>
+<div v-focus-section:my-section>
+  <div v-focus></div>
+</div>
+```
+
+#### Set configuration
+
+```html
+<!-- set configuration -->
+<div v-focus-section:my-section="{enterTo:'last-focused'}">
+  <div v-focus></div>
+</div>
+```
+
+#### Set default section
+
+```html
+<!-- set default section -->
+<div v-focus-section:my-section.default="{enterTo:'last-focused'}">
+  <div v-focus></div>
+</div>
+```
+
+### `v-disable-focus-section`
+
+This directive will make the conponemt unnavigable.
+See [SpatialNavigation.disable()](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationdisablesectionid),
+[SpatialNavigation.enable()](https://github.com/luke-chang/js-spatial-navigation#spatialnavigationenablesectionid).
+
+```html
+<div v-focus-section v-disable-focus-section="disable">
+  <div v-focus></div>
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        disable: false
+      };
+    },
+    methods: {
+      changeDisable() {
+        this.disable = !this.disable;
+      }
+    }
+  };
+</script>
 ```
