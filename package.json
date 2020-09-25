@@ -1,6 +1,6 @@
 {
   "name": "vue-js-spatial-navigation",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Vue directive of js-spatial-navigation",
   "main": "index.js",
   "directories": {
@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/spacerefugee/vue-js-spatial-navigation/issues"
   },
-  "homepage": "https://github.com/spacerefugee/vue-js-spatial-navigation#readme"
+  "homepage": "https://github.com/spacerefugee/vue-js-spatial-navigation#readme",
+  "dependencies": {
+    "focus-options-polyfill": "^1.6.0",
+    "scroll-behavior-polyfill": "^2.0.13"
+  }
 }
