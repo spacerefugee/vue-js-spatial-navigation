@@ -21,6 +21,10 @@ Vue.use(vjsn);
 
 #### Optional global [Configuration](https://github.com/luke-chang/js-spatial-navigation#configuration)
 
+#### Additional configuration `scrollOptions`:
+
+- The page will auto scroll to the focus element by using [`scrollIntoView`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView). You can set this `scrollOptions` for the `scrollIntoViewOptions`
+
 ```javascript
 const config = {
   straightOnly: false,
@@ -32,7 +36,8 @@ const config = {
   leaveFor: null,
   restrict: "self-first",
   tabIndexIgnoreList: "a, input, select, textarea, button, iframe, [contentEditable=true]",
-  navigableFilter: null
+  navigableFilter: null,
+  scrollOptions: { behavior: "smooth", block: "center" }
 };
 Vue.use(vjsn, config);
 ```
