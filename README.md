@@ -23,7 +23,11 @@ Vue.use(vjsn);
 
 #### Additional configuration `scrollOptions`:
 
-- The page will auto scroll to the focus element by using [`scrollIntoView`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView). You can set this `scrollOptions` for the `scrollIntoViewOptions`
+- The page will auto scroll to the focus element by using [`scrollIntoView`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView).
+
+- You can set this `scrollOptions` for the `scrollIntoViewOptions`.
+
+- The page will not scroll to the focus element when setting `scrollOptions` to `""` or `null`.
 
 ```javascript
 const config = {
